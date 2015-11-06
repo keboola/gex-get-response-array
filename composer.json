@@ -1,0 +1,26 @@
+{
+    "name": "keboola/ex-generic-response-array",
+    "description": "Fund an array within the response object",
+    "license": "MIT",
+	"keywords": ["generic", "rest", "extractor"],
+    "authors": [
+        {
+            "name": "Ondrej Vana",
+            "email": "kachna@keboola.cz"
+        }
+    ],
+    "require": {
+		"keboola/ex-generic-v2": "~0.2.0",
+        "keboola/php-utils": "~0.1.19",
+        "php": ">=5.4.0"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"codeclimate/php-test-reporter": "dev-master"
+	},
+	"autoload": {
+		"psr-0": {
+			"Keboola\\ExGenericModule": "src/"
+		}
+	}
+}
