@@ -42,10 +42,9 @@ class FindResponseArray implements ResponseModuleInterface
             $data = Utils::getDataFromPath($path, $response, ".");
             if (empty($data)) {
                 Logger::log('warning', "dataField '{$path}' contains no data!");
-            }
-
-            // In case of a single object being returned
-            if (!is_array($data)) {
+                $data = [];
+            } elseif (!is_array($data)) {
+                // In case of a single object being returned
                 $data = [$data];
             }
         } elseif (is_array($response)) {
