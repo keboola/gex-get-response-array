@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+		"keboola/ex-generic-v2": "*",
         "keboola/php-utils": "~0.1.19",
         "php": ">=5.4.0",
         "keboola/ex-generic-moduleinterface": "^0.2.0"
