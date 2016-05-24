@@ -1,6 +1,6 @@
 {
     "name": "keboola/ex-generic-response-array",
-    "description": "Fund an array within the response object",
+    "description": "Find an array within the response object",
     "license": "MIT",
 	"keywords": ["generic", "rest", "extractor"],
     "authors": [
