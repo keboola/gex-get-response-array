@@ -2,10 +2,9 @@
 namespace Keboola\ExGenericModule;
 
 use Keboola\GenericExtractor\Modules\ResponseModuleInterface;
-use Keboola\Utils\Utils;
-use Keboola\Juicer\Config\JobConfig,
-	Keboola\Juicer\Exception\UserException,
-	Keboola\Juicer\Common\Logger;
+use Keboola\Juicer\Config\JobConfig;
+use	Keboola\Juicer\Exception\UserException;
+use	Keboola\Juicer\Common\Logger;
 
 class FindResponseArray implements ResponseModuleInterface
 {
@@ -39,7 +38,7 @@ class FindResponseArray implements ResponseModuleInterface
                 throw new UserException("'dataField' must be either a path string or an object with 'path' attribute.");
             }
 
-            $data = Utils::getDataFromPath($path, $response, ".");
+            $data = \Keboola\Utils\getDataFromPath($path, $response, ".");
             if (empty($data)) {
                 Logger::log('warning', "dataField '{$path}' contains no data!");
                 $data = [];
