@@ -1,28 +1,15 @@
 {
     "name": "keboola/ex-generic-response-array",
-    "description": "Find an array within the response object",
+    "description": "Depreceated",
     "license": "MIT",
 	"keywords": ["generic", "rest", "extractor"],
     "authors": [
         {
-            "name": "Ondrej Vana",
-            "email": "kachna@keboola.cz"
+            "name": "Keboola",
+            "email": "devel@keboola.com"
         }
     ],
-    "require": {
-        "php": ">=7.0",
-        "keboola/juicer": "^1.0",
-        "keboola/php-utils": "^1.0",
-        "keboola/ex-generic-moduleinterface": "^0.2.0"
-    },
-	"require-dev": {
-		"phpunit/phpunit": "3.7.*",
-		"codeclimate/php-test-reporter": "dev-master"
-	},
-	"autoload": {
-		"psr-0": {
-			"Keboola\\ExGenericModule": "src/"
-		}
-	},
-    "minimum-stability": "dev"
+    "suggest": {
+        "keboola/ex-generic-v2": "Merged into Generic Extractor"
+    }
 }
