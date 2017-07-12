@@ -2,7 +2,7 @@
     "name": "keboola/ex-generic-response-array",
     "description": "Depreceated",
     "license": "MIT",
-	"keywords": ["generic", "rest", "extractor"],
+	"keywords": ["generic", "rest", "extractor", "deprecated"],
     "authors": [
         {
             "name": "Keboola",
